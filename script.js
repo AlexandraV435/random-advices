@@ -1,6 +1,6 @@
 const API = 'https://api.adviceslip.com/advice';
 const advice = document.getElementById('advice');
-function getAdvece(url) {
+function getAdvice(url) {
   advice.innerHTML = '';
   fetch(url).then(res => res.json()).then(data => {
     advice.innerHTML = `
@@ -12,4 +12,4 @@ function getAdvece(url) {
   })
 }
 
-getAdvece(API)
+getAdvice(API)
